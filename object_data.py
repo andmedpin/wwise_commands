@@ -1,6 +1,6 @@
 from waapi import WaapiClient
 from pprint import pprint
-
+import ctypes
 
 def selected_object_id():
     # Get user's selected object data in Wwise
@@ -22,7 +22,8 @@ def get_object_info(objetc_id):
     }
 
     options = {
-        "return": ['id', 'path', 'parent', 'name', 'type', 'notes']
+        "return": ['id', 'name', 'type', 'notes']
+        #"return": ['id', 'path', 'parent', 'name', 'type', 'notes']
     }
 
     object_data = client.call("ak.wwise.core.object.get", args, options=options)
@@ -33,5 +34,7 @@ def get_object_info(objetc_id):
 
 
 if __name__ == '__main__':
-    pprint(get_object_info(selected_object_id()))
+    info = get_object_info(selected_object_id())
+    #print(str(info))
+    ctypes.windll.user32.MessageBoxW(0, str(info), "Object Info", 0)
     pass
