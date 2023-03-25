@@ -2,6 +2,7 @@ from waapi import WaapiClient
 from pprint import pprint
 import ctypes
 
+
 def selected_object_id():
     # Get user's selected object data in Wwise
     client = WaapiClient()
@@ -13,8 +14,8 @@ def selected_object_id():
     return info
 
 
-def get_object_info(objetc_id):
-    string_id = objetc_id
+def get_object_info(object_id):
+    string_id = object_id
     client = WaapiClient()
 
     args = {
@@ -35,6 +36,6 @@ def get_object_info(objetc_id):
 
 if __name__ == '__main__':
     info = get_object_info(selected_object_id())
-    #print(str(info))
-    ctypes.windll.user32.MessageBoxW(0, str(info), "Object Info", 0)
+    pprint(str(info))
+    #ctypes.windll.user32.MessageBoxW(0, str(info), "Object Info", 0)
     pass
