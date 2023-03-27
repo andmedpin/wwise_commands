@@ -8,7 +8,7 @@
             "args":"C:/Users/andme/Documents/repos/wwise_commands/loop_event/loop_event.py",
             "contextMenu":{
                     "basePath":"amp commands",
-                    "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer"
+                    "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer,WorkUnit"
 
                 },          
             "mainMenu":{
