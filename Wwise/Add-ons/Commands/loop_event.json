@@ -4,17 +4,15 @@
         {
             "id":"ak.loopEvent",
             "displayName":"Make Loop Event",
-            //"defaultShortcut":"C",
             "program":"python",
-            "startMode":"MultipleSelectionSingleProcessSpaceSeparated",
-            "args":"/Users/andresmedina/repos/wwise_commands/loop_event/loop_event.py",
+            "args":"C:/Users/andme/Documents/repos/wwise_commands/loop_event/loop_event.py",
             "contextMenu":{
-                    "basePath":"amp",
+                    "basePath":"amp commands",
                     "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer"
 
                 },          
             "mainMenu":{
-                    "basePath":"amp"
+                    "basePath":"amp commands"
 
                 }
         }

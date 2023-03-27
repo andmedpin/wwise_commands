@@ -37,5 +37,5 @@ def get_object_info(object_id):
 if __name__ == '__main__':
     info = get_object_info(selected_object_id())
     pprint(str(info))
-    #ctypes.windll.user32.MessageBoxW(0, str(info), "Object Info", 0)
+    ctypes.windll.user32.MessageBoxW(0, str(info), "Object Info", 0)
     pass

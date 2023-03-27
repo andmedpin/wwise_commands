@@ -2,18 +2,17 @@
     "version":2,
     "commands":[
         {
-            // Please refer to https://www.audiokinetic.com/library/edge/?source=SDK&id=defining__custom__commands.html
-            "id":"object.info",
+            "id":"ak.objectInfo",
             "displayName":"Object Info",
             "program":"python",
-            "args": "C://Users/andme/Documents/repos/wwise_commands/object_data.py",
+            "args": "C:/Users/andme/Documents/repos/wwise_commands/object_data/object_data.py",
             "contextMenu":{
-                "basePath":"amp",
+                "basePath":"amp commands",
                 "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer"
 
             },          
         "mainMenu":{
-                "basePath":"amp"
+                "basePath":"amp commands"
 
             }
         }
