@@ -4,8 +4,10 @@
         {
             "id":"ak.objectInfo",
             "displayName":"Object Info",
-            "program":"python",
-            "args": "C:/Users/andme/Documents/repos/wwise_commands/object_data/object_data.py",
+            "program":"py.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args":"-3 ${CurrentCommandDirectory}\\object_data.py",
+            "redirectOutputs": true,
             "contextMenu":{
                 "basePath":"amp commands",
                 "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer,WorkUnit"

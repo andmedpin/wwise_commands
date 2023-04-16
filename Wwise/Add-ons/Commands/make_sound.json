@@ -2,17 +2,15 @@
     "version":2,
     "commands":[
         {
-            "id":"ak.loopEvent",
-            "displayName":"Make Loop Event",
-            "program":"py.exe",
-            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
-            "args":"-3 ${CurrentCommandDirectory}\\loop_event.py",
-            "redirectOutputs": true,
+            "id":"ak.makeEvent",
+            "displayName":"Make Event",
+            "program":"python",
+            "args":"C:/Users/andme/Documents/repos/wwise_commands/loop_event/make_sound.py",
             "contextMenu":{
                     "basePath":"amp commands",
                     "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer,WorkUnit"
 
-                },
+                },          
             "mainMenu":{
                     "basePath":"amp commands"
 

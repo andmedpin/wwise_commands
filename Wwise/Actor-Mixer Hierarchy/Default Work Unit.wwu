@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1327DFC5-DBAF-45A2-9C7A-B1C73E73FF93}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{1327DFC5-DBAF-45A2-9C7A-B1C73E73FF93}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1327DFC5-DBAF-45A2-9C7A-B1C73E73FF93}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="New Random Container" ID="{92793C8A-74B4-4446-8C77-3EAB17956D20}" ShortID="395748455">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DCE927DE-B9E1-4C39-89A4-D015A95052E8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3256B2AE-D283-41CE-B6B3-3C9DB9E30490}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="New Sound SFX" ID="{07774E10-9BD5-4C22-8804-95FE494068FD}" ShortID="7564724">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DCE927DE-B9E1-4C39-89A4-D015A95052E8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3256B2AE-D283-41CE-B6B3-3C9DB9E30490}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
