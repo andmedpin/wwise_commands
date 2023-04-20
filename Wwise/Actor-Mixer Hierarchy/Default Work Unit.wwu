@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1327DFC5-DBAF-45A2-9C7A-B1C73E73FF93}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="New Random Container" ID="{92793C8A-74B4-4446-8C77-3EAB17956D20}" ShortID="395748455">
+				<BlendContainer Name="amp" ID="{466D0179-A9CC-4E1A-AA5C-598DB6C0C410}" ShortID="475352398">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DCE927DE-B9E1-4C39-89A4-D015A95052E8}"/>
@@ -13,7 +13,10 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="New Sound SFX" ID="{07774E10-9BD5-4C22-8804-95FE494068FD}" ShortID="7564724">
+						<Sound Name="New Sound SFX" ID="{C50985DF-BC51-4463-892B-5293E3E5183E}" ShortID="535874842">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DCE927DE-B9E1-4C39-89A4-D015A95052E8}"/>
@@ -26,7 +29,7 @@
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-				</RandomSequenceContainer>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
