@@ -1,0 +1,22 @@
+{
+    "version":2,
+    "commands":[
+        {
+            "id":"ak.builtInParams",
+            "displayName":"Built In Parameters",
+            "program":"py.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args":"-3 ${CurrentCommandDirectory}\\built_in_params.py",
+            "redirectOutputs": true,
+            "contextMenu":{
+                    "basePath":"amp commands",
+                    "enabledFor":"Sound,ActorMixer,SwitchContainer,RandomSequenceContainer,WorkUnit"
+
+                },
+            "mainMenu":{
+                    "basePath":"amp commands"
+
+                }
+        }
+    ]
+}
