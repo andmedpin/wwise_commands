@@ -43,6 +43,7 @@ def make_event():
                         "name": "Play",
                         "type": "Action",
                         "@ActionType": 1,
+                        "@FadeTime": 0.1,
                         "@Target": selected_object_info("id")
 
                     },
@@ -51,9 +52,22 @@ def make_event():
                         "type": "Action",
                         "@ActionType": 36,
                         "@Target": selected_object_info("id"),
+                    }
+                ]
+            },
+
+            {
+                "type": "Event",
+                "name": f"{selected_object_info('name')}_loop_stop",
+                "children": [
+                    {
+                        "name": "Stop",
+                        "type": "Action",
+                        "@ActionType": 2,
+                        "@FadeTime": 0.1,
+                        "@Target": selected_object_info("id")
 
                     }
-
                 ]
             }
         ]
@@ -64,11 +78,6 @@ def make_event():
     client.disconnect()
 
     # set randomizer for seek
-
-    # event id new_object.get("children")[0].get("id")
-    # property SeekPercent
-    # platform new_object.get("children")[0].get("children")[1].get("id")
-    #pprint(new_object)
     rand_args = {
         "object": new_object.get("children")[0].get("children")[1].get("id"),
         "property": "SeekPercent",
@@ -77,21 +86,10 @@ def make_event():
         "max": 100
 
     }
-    print(rand_args.get("object"))
     client = WaapiClient()
     client.call("ak.wwise.core.object.setRandomizer", rand_args)
     client.disconnect()
 
 
-
-
-# get selected container
-# make an event with the name of the object + _loop ✅
-# make another event with the name of the object + _loop_stop
-# play event should have these actions: play for the container, seek for the container w/ seek % at 100 random offset
-# stop event should have the stop action
-# fades for both play and stop
-
 if __name__ == '__main__':
-    #info = selected_object_info("id")
     make_event()
